@@ -1,0 +1,29 @@
+.container{
+    width: 90%;
+    max-width: 470px;
+    background:radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(106,106,106,1) 100%, rgba(0,212,255,1) 100%);
+}
+.form-control{
+    box-shadow: none;
+    border-radius: 40px;
+    padding: 10px 20px;
+}
+.form-control:focus{
+    box-shadow: none;
+    border: none;
+}
+button{
+    margin-top: 2px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+.error-message{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body class="bg-dark">
+    <div class="container my-5 py-4 px-4 text-center rounded-4 text-white">
+        <div class="row align-items-center">
+            <div class="col-10"><input id="search" type="text" class="form-control"></div>
+            <div class="col-2">
+                <button id="click">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button> 
+            </div>
+            <div class="error-message">
+                <p>Invalid city name</p>
+            </div>       
+        </div>
+
+       <div class="hidden" style="display: none;">
+
+        <div class="weather">
+            <img id="weatherIcon" src="images/clouds.png">
+            <h1 class="temp" style="font-size: 80px; font-weight: bold;">22°C</h1>
+            <h2 class="city" style="font-size: 45px; font-weight: 400;">New York</h2>
+        </div>
+
+        <div class="row px-3 mt-5">
+            <div class="col d-flex align-items-center text-start">
+                <img src="images/humidity.png" style="margin-right: 8px; width: 40px;">
+                <div>
+                    <p class="humidity m-1" style="font-size: 20px;">50%</p>
+                    <p> &nbsp;humidity</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-center text-start">
+                <img src="images/wind.png" style="margin-right: 8px; width: 40px;">
+                <div>
+                    <p class="wind m-1" style="font-size: 20px;">15 KM/H</p>
+                    <p>&nbsp;wind speed</p>
+                </div>
+            </div>
+        </div>
+
+    </div> 
+</div>
+    <script src="js/api.js"></script>
+</body>
+</html>
